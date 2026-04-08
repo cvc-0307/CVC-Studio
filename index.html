@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CVC-Studio</title>
     <style>
-        body { font-family: 'Pretendard', sans-serif; text-align: center; background-color: #eef2f7; padding: 50px; margin: 0; }
-        .profile-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); display: inline-block; max-width: 400px; width: 90%; }
-        h1 { color: #222; margin-bottom: 5px; }
-        .sub-title { color: #666; font-size: 0.9em; margin-bottom: 20px; }
-        .gear-box { background: #f8f9fa; padding: 15px; border-radius: 12px; margin: 20px 0; border-left: 4px solid #007bff; }
-        .gear-info { color: #007bff; font-weight: bold; font-size: 0.95em; }
-        .message { font-style: italic; color: #444; margin: 20px 0; }
-        .footer { margin-top: 30px; font-size: 0.8em; color: #bbb; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        body { font-family: 'Pretendard', sans-serif; background: #121212; color: white; text-align: center; padding: 50px 20px; margin: 0; }
+        .card { background: #1e1e1e; border-radius: 25px; padding: 40px 20px; display: inline-block; width: 100%; max-width: 350px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 1px solid #333; }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid #007bff; object-fit: cover; margin-bottom: 20px; box-shadow: 0 0 20px rgba(0,123,255,0.3); }
+        h1 { margin: 10px 0; font-size: 28px; letter-spacing: -1px; }
+        .tag { color: #007bff; font-weight: 600; font-size: 14px; margin-bottom: 15px; }
+        .desc { color: #aaa; line-height: 1.6; font-size: 15px; margin: 20px 0; }
+        .gear-info { background: #252525; padding: 12px; border-radius: 12px; font-size: 13px; color: #888; margin-bottom: 25px; }
+        .btn { display: block; background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 14px; text-decoration: none; border-radius: 12px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,123,255,0.4); }
     </style>
 </head>
 <body>
-    <div class="profile-card">
+    <div class="card">
+        <img src="profile.jpg" class="profile-img" alt="Profile">
         <h1>CVC-Studio</h1>
-        <p class="sub-title">Furry Photographer & Enthusiast</p>
-        <hr>
-        <p>📸 <b>Canon EOS R10</b></p>
-        <div class="gear-box">
-            <p class="gear-info">RF-S 18-45mm IS STM</p>
-            <p class="gear-info">RF 50mm f1.8 STM</p>
+        <div class="tag">#Furry_Photographer #EOS_R10</div>
+        <p class="desc">"최고의 액팅을<br>최고의 한 컷으로 담아냅니다."</p>
+        <div class="gear-info">
+            Canon EOS R10<br>
+            RF 50mm f1.8 STM
         </div>
-        <p class="message">"최고의 액팅을 최고의 한 컷으로 담아냅니다."</p>
-        <hr>
-        <p style="font-size: 0.9em; color: #555;">📍 다음 행사를 기다리는 중...</p>
-        <div class="footer">© 2026 CVC-0307. Powered by GitHub</div>
+        <a href="https://twitter.com/CVC" class="btn">트위터 방문하기</a>
     </div>
 </body>
 </html>
